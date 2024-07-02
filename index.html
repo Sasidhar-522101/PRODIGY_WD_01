@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Navigation Menu</title>
+<style>
+  /* Styles for the navigation menu */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent; /* Initial background color */
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+    z-index: 1000; /* Ensures it's above other content */
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent; /* Initial background color */
+  }
+
+  .navbar li {
+    float: left;
+  }
+
+  .navbar li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff; /* Initial font color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+
+  /* Hover effect for menu items */
+  .navbar li a:hover {
+    color: #ffcc00; /* Change font color on hover */
+  }
+
+  /* Active menu item */
+  .active {
+    background-color: #ffcc00; /* Background color for active menu item */
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar" id="navbar">
+  <ul>
+    <li><a class="active" href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<div style="height: 1000px; background-color: #f0f0f0;"> <!-- Placeholder content to enable scrolling --><br><br><br><br><br>
+
+Scroll down...
+
+
+<br>
+  <p>Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.
+<br><p>
+Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.
+</p>
+Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.</p>
+</div>
+
+
+<div>
+<h4>
+This is home page
+</h4>
+</div>
+
+<script>
+  // JavaScript for changing navigation menu on scroll
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("navbar").style.backgroundColor = "#333"; // Change background color on scroll
+      document.getElementById("navbar").style.transition = "background-color 0.3s ease"; // Smooth transition
+    } else {
+      document.getElementById("navbar").style.backgroundColor = "transparent"; // Reset background color
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<style>
+  /* Styles for the navigation menu */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent; /* Initial background color */
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+    z-index: 1000; /* Ensures it's above other content */
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent; /* Initial background color */
+  }
+
+  .navbar li {
+    float: left;
+  }
+
+  .navbar li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff; /* Initial font color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+
+  /* Hover effect for menu items */
+  .navbar li a:hover {
+    color: #ffcc00; /* Change font color on hover */
+  }
+
+  /* Active menu item */
+  .active {
+    background-color: #ffcc00; /* Background color for active menu item */
+  }
+</style>
+
+</head>
+<body>
+
+
+
+<div class="navbar" id="navbar">
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+<div style="height: 50px; background-color: #cf8e65;"> <!-- Placeholder content to enable scrolling --><br><br>
+  Scroll down...
+</div>
+
+
+ <h1>Contact Us</h1>
+  <p>This is the Contact page content.</p>
+  
+  <!-- Link back to the Home page -->
+  <p><a href="index.html">Back to Home</a></p>
+</div>
+
+<script>
+  // JavaScript for changing navigation menu on scroll
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("navbar").style.backgroundColor = "#333"; // Change background color on scroll
+      document.getElementById("navbar").style.transition = "background-color 0.3s ease"; // Smooth transition
+    } else {
+      document.getElementById("navbar").style.backgroundColor = "transparent"; // Reset background color
+    }
+  }
+</script>
+
+</body>
+</html>
